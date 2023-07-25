@@ -21,16 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 
-
-/* RANDMON LOCATION */
-$(document).ready(function(){
-$('.home_img img').each(function( index ) {
-  $(this).css({
-    left : Math.random() * ($('.home_img').width() - $(this).width()),
-    top : Math.random() * ($('.home_img').height() - $(this).height())
-  });
+window.addEventListener('load', () => {
+    const images = document.querySelectorAll('.random-img');
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const randomImage = images[randomIndex].getAttribute('src');
+    const imageElement = document.getElementById('randomImage');
+    imageElement.src = randomImage;
 });
-  
 
 /* GENERAL CLICKS */
 $('.show_info').click(function(){
@@ -39,7 +36,7 @@ $('.show_info').click(function(){
   $(".project_info").toggle();
 
 });
-  
+
 /* GENERAL CLICKS */
  var elems = $(".home_img, .footer_randmon");
 	if (elems.length) {
@@ -61,7 +58,7 @@ $('.show_info').click(function(){
     }
   }
 }
-  
+
 function zoom(e){
   var zoomer = e.currentTarget;
   e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
@@ -125,17 +122,17 @@ slickSlide.on('init reInit afterChange', function (event, slick, currentSlide, n
                }
             ]
           });
-       
-     })
-                             
-     
-  
 
-     
+     })
+
+
+
+
+
      $('.slider').css('height', `calc(100vh - ${$('header').outerHeight()}px - 50px)`)
      $('.slider img').each(function(){
        $(this).css('height', `calc(100vh - ${$('header').outerHeight()}px - 50px)`)
-     }) 
+     })
      $('.slider video').each(function(){
          $(this).css('height', `calc(100vh - ${$('header').outerHeight()}px - 50px)`)
        })
@@ -145,12 +142,12 @@ slickSlide.on('init reInit afterChange', function (event, slick, currentSlide, n
      	$('.slider').css('height', `calc(100vh - ${height}px - 50px)`)
        $('.slider img').each(function(){
          $(this).css('height', `calc(100vh - ${height}px - 50px)`)
-       }) 
+       })
        $('.slider video').each(function(){
          $(this).css('height', `calc(100vh - ${height}px - 50px)`)
-       }) 
+       })
      })
-     
+
 
 });
 

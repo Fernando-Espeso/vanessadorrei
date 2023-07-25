@@ -238,6 +238,17 @@ div#cart {
 img{
 	width:100%;
 }
+#imageContainer {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  #randomImage {
+      max-width: 100%;
+      height: auto;
+  }
 .product{
 	display:grid;
   	grid-gap:5px;
