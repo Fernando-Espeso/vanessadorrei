@@ -82,18 +82,14 @@ Design by Matto studio
   <!--Header-->
   <header>
 	<div class="menu">
-      	<div><a href="../collections/publishing" {% if template == 'collection' %}class="active" {% endif %} >Store</a></div>
-        <div><a href="../collections/publishing" {% if template == 'collection' %}class="active" {% endif %} >Dorrei</a></div>
+      	<div><a href="../collections/all" {% if template == 'collection' %}class="active" {% endif %} >Store</a></div>
+        <div><a href="../index" {% if template == 'index' %}class="active" {% endif %} >Vanessa Dorrei</a></div>
        	<div><a href="../pages/studio" {% if template == 'page.studio' %}class="active" {% endif %} >Archive</a></div>
-        {% unless template == 'index' or page.url == '/pages/contact' %}          <div class="info">
-            {% if template == 'page.studio' %}MATTO is a creative agency, based in Paris <br>photography — art direction — publishing — video{% else %}
-            contemporary art magazine & publishing as artistic practice{% endif %}
-           </div>
-       	{% endunless %}
+      	</div>
 
 
 	    {% if template == 'product'%}
-        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">cart<span class="cart-total">
+        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Cart<span class="cart-total">
 
         {%- if cart.item_count == 0 -%}
       	0
@@ -110,7 +106,7 @@ Design by Matto studio
         {% endif %}
 
               {% if template == 'index'%}
-        <div style="opacity:0; pointer-events:none;"id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">cart<span class="cart-total">
+        <div style="opacity:0; pointer-events:none;"id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Cart<span class="cart-total">
 
         {%- if cart.item_count == 0 -%}
       	0
@@ -130,7 +126,7 @@ Design by Matto studio
 
           {% if template == 'collection'%}
 
-        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">cart<span class="cart-total">
+        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Cart<span class="cart-total">
 
         {%- if cart.item_count == 0 -%}
       	0
@@ -145,7 +141,7 @@ Design by Matto studio
 
           {% if template == 'cart'%}
 
-        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">cart<span class="cart-total">
+        <div id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Cart<span class="cart-total">
 
         {%- if cart.item_count == 0 -%}
       	0
@@ -161,7 +157,7 @@ Design by Matto studio
 
         {% endif %}
 
-	</div>
+
   </header>
   {{ content_for_layout }}
   <footer>
