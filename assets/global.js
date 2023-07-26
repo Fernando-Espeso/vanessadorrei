@@ -21,13 +21,16 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 
-window.addEventListener('load', () => {
-    const images = document.querySelectorAll('.random-img');
-    const randomIndex = Math.floor(Math.random() * images.length);
-    const randomImage = images[randomIndex].getAttribute('src');
-    const imageElement = document.getElementById('randomImage');
-    imageElement.src = randomImage;
+
+/* RANDMON LOCATION */
+$(document).ready(function(){
+$('.home_img img').each(function( index ) {
+  $(this).css({
+    left : Math.random() * ($('.home_img').width() - $(this).width()),
+    top : Math.random() * ($('.home_img').height() - $(this).height())
+  });
 });
+
 
 /* GENERAL CLICKS */
 $('.show_info').click(function(){
