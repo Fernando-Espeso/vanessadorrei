@@ -1,8 +1,7 @@
 Article
-
 {% if article.image.size > 0 %}
 <!--Featured Image-->
-<img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" /> 
+<img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" />
 {% endif %}
 
 {% if article.content != blank %}

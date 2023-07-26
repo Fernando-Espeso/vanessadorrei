@@ -1,7 +1,19 @@
-{% for metaobject in pages.metafields.custom.archive.value %}
-  {% if metaobject.system.type == "testimonial" %}
-    {% render 'testimonial' with metaobject as testimonial %}
-  {% else %}
-    {{ metaobject.system.handle }}
-  {% endif %}
-{% endfor %}
+<div class="main">
+{% assign blog_handles = "archive" | split: "," %}
+  {% for handle in blog_handles %}
+       {% for article in blogs[handle].articles %}
+            <div class="article {{ article.tags }}">
+               {% if article.image.size > 0 %}
+               <!--Featured Image-->
+               <a href="{{ article.url }}">
+                    <img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" />
+               </a>
+               {% endif %}
+               <!--title-->
+              <div style="padding:10px 20px 10px 20px" class="title-article">
+                  <a href="{{ article.url }}">{{ article.title }}</a><span>, {{ article.tags }}</span>
+              </div>
+         </div>
+           {% endfor %}
+   {% endfor %}
+</div>
