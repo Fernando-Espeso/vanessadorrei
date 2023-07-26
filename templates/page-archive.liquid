@@ -1,0 +1,7 @@
+{% for metaobject in product.metafields.custom.mixed_metaobject_list.value %}
+  {% if metaobject.system.type == "testimonial" %}
+    {% render 'testimonial' with metaobject as testimonial %}
+  {% else %}
+    {{ metaobject.system.handle }}
+  {% endif %}
+{% endfor %}
