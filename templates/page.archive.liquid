@@ -1,5 +1,6 @@
-<div class="main">
+<div id="main-collection" class="main">
 {% assign blog_handles = "archive" | split: "," %}
+<div class="all_products">
   {% for handle in blog_handles %}
        {% for article in blogs[handle].articles %}
             <div class="article {{ article.tags }}">
@@ -16,4 +17,5 @@
          </div>
            {% endfor %}
    {% endfor %}
+  </div>
 </div>
