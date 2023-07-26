@@ -1,4 +1,4 @@
-{% for metaobject in product.metafields.custom.mixed_metaobject_list.value %}
+{% for metaobject in pages.metafields.custom.archive.value %}
   {% if metaobject.system.type == "testimonial" %}
     {% render 'testimonial' with metaobject as testimonial %}
   {% else %}
