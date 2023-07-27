@@ -81,6 +81,7 @@ Design by Matto studio
   </div>
   <!--Header-->
   <header>
+  {% if template == 'index'%}<div class="back-logo"><img src="{{ 'logo.png' | asset_url }}"></div>{% endif %}
 	<div class="menu">
       	<div><a href="../collections/all" {% if template == 'collection' %}class="active" {% endif %} >Store</a></div>
         <div class="vanessa"><a href="../index" {% if template == 'index' %}class="active" {% endif %} >DORREI</a></div>

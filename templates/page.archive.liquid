@@ -3,7 +3,7 @@
 <div class="all_products">
   {% for handle in blog_handles %}
        {% for article in blogs[handle].articles %}
-            <div class="article {{ article.tags }}">
+            <div class="article">
                {% if article.image.size > 0 %}
                <!--Featured Image-->
                <a href="{{ article.url }}">
@@ -11,8 +11,9 @@
                </a>
                {% endif %}
                <!--title-->
-              <div style="padding:10px 20px 10px 20px" class="title-article">
-                  <a href="{{ article.url }}">{{ article.title }}</a><span>, {{ article.tags }}</span>
+              <div style="padding:10px 0px" class="title-article">
+                  <a href="{{ article.url }}">{{ article.title }}</a><span>  {{ article.content }}</span>
+
               </div>
          </div>
            {% endfor %}

@@ -83,6 +83,12 @@ select{
   	-ms-user-select: none;
   	user-select: none;
 }
+
+input,
+button,
+select:hover{
+  background-color: green;
+}
 input[type="checkbox"],
 button,
 select{
@@ -92,6 +98,9 @@ select{
     font-weight: bold;
     background-color: lightgrey;
     padding: 5px;
+}
+button:hover{
+  background-color: green;
 }
 input:disabled,
 button:disabled,
@@ -361,13 +370,26 @@ width: 400px;
 .item-quantity span:hover{
 }
 .clear{
-grid-column: 8/span 2;
 height: fit-content;
-text-align: right;
+text-align: left;
 }
 button#add-to-cart {
     margin-top: 10px;
 }
+div#shopify-section-template--20038318915867__home-news {
+    z-index: 100000;
+}
+.back-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+.back-logo img{
+width: 70vw; 
+}
+
 .checkout{
   position: sticky;
   grid-column: span 4;
@@ -530,7 +552,7 @@ div#cart  {
 }
 .all_products {
     grid-gap: 30px;
-    grid-column: 2/ span 12;
+    grid-column: span 14;
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
@@ -564,6 +586,12 @@ div#cart  {
 .cart-title {
     margin-top: 5px;
     width: 100%;
+}
+.main {
+    padding: 0 10px 10px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
 }
 }
 
