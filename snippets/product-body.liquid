@@ -21,14 +21,8 @@
           </div>
       {% endcase %}
     {% endfor %}
-
     <img class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-
-
   </a>
-
-
-
   <div class="row">
   <!--Product Title-->
     <div class="main-information">
@@ -50,14 +44,11 @@
         {% endif %}
       {% else %}
         <span>{{ product.price | money }}</span>
-
       {% endif %}
-
       </div>
       </div>
-
     </div>
-
+    <div class="info-articl">{{ product.content }}</div>
    	<div class="information">
 	  <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
                       {%- if product.has_only_default_variant -%}
@@ -76,7 +67,7 @@
                              {% if product.available %}
                                 <button id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                              {% else %}
-                                 <div class="sold-out">OUT OF STOCK</div>
+                                 <div class="sold-out">SOLD OUT</div>
                              {% endif %}
                            </div>
                          <div class="variations">

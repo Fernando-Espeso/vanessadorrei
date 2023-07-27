@@ -6,13 +6,14 @@
             <div class="article">
                {% if article.image.size > 0 %}
                <!--Featured Image-->
-               <a href="{{ article.url }}">
+               <a>
                     <img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" />
                </a>
                {% endif %}
                <!--title-->
               <div style="padding:10px 0px" class="title-article">
-                  <a href="{{ article.url }}">{{ article.title }}</a><span>  {{ article.content }}</span>
+                  <div class="title" href="{{ article.url }}">{{ article.title }}</div>
+                  <div class="info-article">{{ article.content }}</div>
 
               </div>
          </div>
