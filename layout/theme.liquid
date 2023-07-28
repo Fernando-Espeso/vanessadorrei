@@ -81,7 +81,7 @@ Design by Matto studio
   </div>
   <!--Header-->
   <header>
-  {% if template == 'index'%}<div class="back-logo"><img src="{{ 'logo.png' | asset_url }}"></div>{% endif %}
+    {% if template == 'index'%}<div class="back-logo"><img src="{{ 'logo.png' | asset_url }}"></div>{% endif %}
 	<div class="menu">
       	<div><a href="../collections/all" {% if template == 'collection' %}class="active" {% endif %} >Store</a></div>
         <div class="vanessa"><a href="../index" {% if template == 'index' %}class="active" {% endif %} >DORREI</a></div>
@@ -163,7 +163,7 @@ Design by Matto studio
   {{ content_for_layout }}
   <footer>
     <img src="{{ 'logo.png' | asset_url }}">
-    <div class="credits">All rights reserved. © Vanessa Dorrei, 2023</div>
+    <div class="credits">© Vanessa Dorrei, 2023</div>
   </footer>
   {%- if template contains 'product' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
