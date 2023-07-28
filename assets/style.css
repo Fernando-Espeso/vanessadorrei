@@ -283,6 +283,10 @@ width: 400px;
   transform: translate(-50%, -50%);
 
 }
+.random-img {
+  Z-INDEX: 1000000000;
+
+}
   #randomImage {
       max-width: 100%;
       height: auto;
