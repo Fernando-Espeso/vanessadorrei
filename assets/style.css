@@ -279,6 +279,7 @@ width: 400px;
   position: fixed;
   top: 50%;
   left: 50%;
+  Z-INDEX: 1000000000;
   transform: translate(-50%, -50%);
 
 }
