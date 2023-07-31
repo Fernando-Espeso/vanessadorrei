@@ -65,26 +65,18 @@
                                      {% else %}
                                      {% endif %}
                              {% if product.available %}
-                                <button id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                                <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                              {% else %}
                                  <div class="sold-out">SOLD OUT</div>
                              {% endif %}
                            </div>
-                         <div class="variations">
-                           <!--Variations Dropdown-->
-                           <select id="product-select" name="id">
-
-                             {% for variant in product.variants %}
-
-                             <option value="{{ variant.id }}">
-
-                             </option>
-
-                             {% endfor %}
-                           </select>
-
-
-                         </div>
+                           <div class="variations">
+                                       <select id="product-select" name="id">
+                                         {% for variant in product.variants %}
+                                         <option value="{{ variant.id }}"></option>
+                                         {% endfor %}
+                                       </select>
+                           </div>
         			</div>
         </form>
 	</div>
@@ -92,6 +84,12 @@
 
 
 </div>
+<style>
+.variations{
+  display: none;
+}
+
+</style>
   {%- if template contains 'product' or template contains 'collection' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
@@ -123,7 +121,6 @@
       {% endif %}
     }
   };
-  //Replace default variant selector
   jQuery(function($) {
     new Shopify.OptionSelectors('product-select', {
       product: {{ product | json }},

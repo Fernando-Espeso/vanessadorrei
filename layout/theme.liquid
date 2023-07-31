@@ -161,10 +161,7 @@ Design by Matto studio
 
   </header>
   {{ content_for_layout }}
-  <footer>
-    <img src="{{ 'logo.png' | asset_url }}">
-    <div class="credits">© Vanessa Dorrei, 2023</div>
-  </footer>
+
   {%- if template contains 'product' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
@@ -190,4 +187,8 @@ setTimeout(updatePrice, 50);
             }
 
 </script>
+<footer>
+  <img src="{{ 'logo.png' | asset_url }}">
+  <div class="credits">© Vanessa Dorrei, 2023</div>
+</footer>
 </html>
