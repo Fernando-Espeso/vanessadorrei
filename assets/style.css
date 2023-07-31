@@ -409,25 +409,25 @@ div#shopify-section-template--20038318915867__home-news {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -20;
-  opacity: 0.3;
+
 }
 @keyframes identifier {
   0%{
     width: 70vw
-
+  opacity: 1;
   }
   25%{
     width: 50vw;
-
+  opacity: 1;
   }
 
   50%{
     width: 20vw;
-
+  opacity:1;
   }
   25%{
     width: 50vw;
-
+  opacity: 1;
   }
 
   100%{
@@ -442,6 +442,7 @@ animation: identifier;
 animation-duration: 2s;
 animation-iteration-count: infinite;
 width: 70vw;
+    opacity: 0.3;
 }
 
 .variations{
