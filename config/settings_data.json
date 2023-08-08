@@ -1,6 +1,7 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/666B6F67-892A-4F90-A528-F0A027256519.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/666B6F67-892A-4F90-A528-F0A027256519.png",
     "sections": {
       "home_news": {
         "type": "home_news",
