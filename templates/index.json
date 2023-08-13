@@ -2,6 +2,17 @@
   "sections": {
     "home-news": {
       "type": "home_news",
+      "blocks": {
+        "dcd77ee4-6c24-460c-a78d-1e8ef9e557fe": {
+          "type": "logo",
+          "settings": {
+            "item": "shopify:\/\/shop_images\/0CD5DA4C-AAA1-418E-8576-2D1F442FDBEF.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "dcd77ee4-6c24-460c-a78d-1e8ef9e557fe"
+      ],
       "settings": {
       }
     }
