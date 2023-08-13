@@ -187,7 +187,7 @@ setTimeout(updatePrice, 50);
             }
 
 </script>
-<footer>
+<footer             {% if template == 'index'%} class="fixed" {% endif %}>
   <img src="{{ 'logo.png' | asset_url }}">
   <div class="credits">© Vanessa Dorrei, 2023</div>
 </footer>
