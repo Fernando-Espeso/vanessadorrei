@@ -2,18 +2,6 @@
   "sections": {
     "home-news": {
       "type": "home_news",
-      "blocks": {
-        "270dcd2c-5927-4d94-b511-defa0e750a6e": {
-          "type": "logo",
-          "settings": {
-            "item": "shopify:\/\/shop_images\/image00001-908x1024.jpg",
-            "height": 50
-          }
-        }
-      },
-      "block_order": [
-        "270dcd2c-5927-4d94-b511-defa0e750a6e"
-      ],
       "settings": {
       }
     }
