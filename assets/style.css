@@ -449,6 +449,12 @@ div#shopify-section-template--20038318915867__home-news {
   }
 
 }
+iframe {
+    display: block;
+    left: 0px!important;
+    /* margin: 0 auto; */
+    width: 100%;
+}
 .back-logo img{
 opacity:0.2;
 animation: identifier;
