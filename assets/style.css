@@ -772,6 +772,13 @@ footer img {
   margin-top: 20px;
   text-align: right;
 }
+  footer img {
+    right: 0;
+    bottom: 32px;
+    position: absolute;
+    width: 70px;
+    opacity: .3;
+}
 }
 
 /*SMALL MOBILE*/
