@@ -713,19 +713,18 @@ div#cart  {
   }
   25%{
     width: 70vw;
-    opacity: 0.2;
+    opacity: 1;
   }
   50%{
     width: 50vw;
-    opacity: 0.2;
+    opacity: 1;
   }
   25%{
     width: 70vw;
-    opacity: 1!important;
+    opacity: 1;
   }
   100%{
     width: 120vw;
-    opacity:0.1;
   }
 
 }
