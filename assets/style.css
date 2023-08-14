@@ -721,10 +721,11 @@ div#cart  {
   }
   25%{
     width: 70vw;
-    opacity: 1;
+    opacity: 1!important;
   }
   100%{
     width: 120vw;
+    opacity:0.1;
   }
 
 }
