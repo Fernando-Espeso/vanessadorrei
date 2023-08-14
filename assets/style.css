@@ -714,7 +714,6 @@ div#cart  {
     width: 70vw;
     opacity: 1;
   }
-
   50%{
     width: 50vw;
     opacity: 1;
@@ -723,7 +722,6 @@ div#cart  {
     width: 70vw;
     opacity: 1;
   }
-
   100%{
     width: 120vw;
   }
@@ -731,10 +729,10 @@ div#cart  {
 }
 .back-logo img{
     opacity: 0.3;
-animation: identifier;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-width: 120vw;
+  animation: identifier;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 120vw;
 }
 footer {
     padding: 10px;
