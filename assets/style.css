@@ -728,7 +728,7 @@ div#cart  {
 
 }
 .back-logo img{
-    opacity: 0.3;
+  opacity: 0.3;
   animation: identifier;
   animation-duration: 2s;
   animation-iteration-count: infinite;
