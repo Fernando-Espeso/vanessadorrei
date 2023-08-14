@@ -451,7 +451,7 @@ div#shopify-section-template--20038318915867__home-news {
 
 }
 .back-logo img{
-
+opacity:1;
 animation: identifier;
 animation-duration: 2s;
 animation-iteration-count: infinite;
