@@ -3,15 +3,22 @@
     "home-news": {
       "type": "home_news",
       "blocks": {
-        "dcd77ee4-6c24-460c-a78d-1e8ef9e557fe": {
+        "logo_z4WMYy": {
           "type": "logo",
           "settings": {
-            "item": "shopify:\/\/shop_images\/C6866753-DE1A-464F-A7E2-A41D5C2F7CF6.jpg"
+            "item": "shopify:\/\/shop_images\/FEB79FF1-A579-4B17-B7CC-0A500BB61885.jpg"
+          }
+        },
+        "logo_DhkzwC": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
           }
         }
       },
       "block_order": [
-        "dcd77ee4-6c24-460c-a78d-1e8ef9e557fe"
+        "logo_z4WMYy",
+        "logo_DhkzwC"
       ],
       "settings": {
       }
